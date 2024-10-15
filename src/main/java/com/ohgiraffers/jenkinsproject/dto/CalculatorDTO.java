@@ -1,4 +1,4 @@
-package com.ohgiraffers.bootproject.dto;
+package com.ohgiraffers.jenkinsproject.dto;
 
 import lombok.*;
 

@@ -1,7 +1,7 @@
-package com.ohgiraffers.bootproject.controller;
+package com.ohgiraffers.jenkinsproject.controller;
 
-import com.ohgiraffers.bootproject.dto.CalculatorDTO;
-import com.ohgiraffers.bootproject.service.CalculatorService;
+import com.ohgiraffers.jenkinsproject.dto.CalculatorDTO;
+import com.ohgiraffers.jenkinsproject.service.CalculatorService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,7 +24,7 @@ public class CalculatorController {
 
     @GetMapping("/plus")
     public ResponseEntity<CalculatorDTO> plusTwoNumbers(CalculatorDTO calculatorDTO) {
-        log.info("plus 핸들러 실행여부 및 값 확인: " + calculatorDTO);
+        log.info("plus 핸들러 실행여부 및 값 확인: {}", calculatorDTO);
 
         /* service 계층에서 더한 값이 돌아오면 */
         int result = calculatorService.plusTwoNumbers(calculatorDTO);
