@@ -1,4 +1,4 @@
-package com.ohgiraffers.bootproject;
+package com.ohgiraffers.jenkinsproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
